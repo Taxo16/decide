@@ -11,9 +11,7 @@ before_script:
   - psql -U postgres -c "ALTER USER decide CREATEDB"
 language: python
 python:
-  - "3.6"
-  - "3.7"
-  - "2.5"
+  - "3.7.4"
 install:
   - pip install -r requirements.txt
   - pip install codacy-coverage
